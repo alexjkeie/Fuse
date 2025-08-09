@@ -417,11 +417,11 @@ async def wanted(ctx, member: Option(discord.Member, "Member", required=False, d
     await ctx.respond(embed=e)
 
 @bot.slash_command(guild_ids=[TEST_GUILD_ID] if TEST_GUILD_ID else None,
-                   description="Meme placeholder (no external fetch) — replace with your own fetch if you want")
+                   description="Meme placeholder (no external fetch)")
 async def meme(ctx):
     # placeholder images — replace or hook to an API (reddit/imgflip) if you want (careful: requires requests and proper caching)
     samples = [
-        "https://i.imgur.com/1J6QZ0y.png",
+        "https://i.ibb.co/jC3LYH9/noFilter.png",
         "https://i.imgur.com/0rVeh9W.jpg",
         "https://i.imgur.com/3GvwNBf.png"
     ]
